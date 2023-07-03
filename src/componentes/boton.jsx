@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button';
+import { useState} from "react";
+import { Button } from 'react-bootstrap';
 
-const ComponenteInsano = () => {
+const Boton = () => {
     const [contador, setContador] = useState(0)
 
     const handleChange = (e) => {
@@ -10,9 +10,9 @@ const ComponenteInsano = () => {
 
     return (
         <>
-        <Button onClick={handleChange}></Button>
+        <Button  variant="primary" onClick={handleChange}> boton</Button>
         <p>Contador:{contador}</p>
         </>
     )
 }
-export default ComponenteInsano
+export default Boton
