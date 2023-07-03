@@ -8,13 +8,13 @@ const ComponenteInsano = () => {
         setTexto(e.target.value)
     }
     useEffect(() => {
-        setContador(contador + 1)
-    }, [texto])
+        setContador(contador + 6.02 * 10 ** 23)
+    })
 
     return (
         <>
         <input onChange={handleChange} />
-        <p>Texto: {texto}</p>
+        <p>Texto:{texto}</p>
         <p>Contador:{contador}</p>
         </>
     )
